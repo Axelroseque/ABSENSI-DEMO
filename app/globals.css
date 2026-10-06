@@ -39,3 +39,4 @@ input:focus,button:focus-visible{outline:2px solid var(--foam);outline-offset:2p
 .big{font-size:56px;text-align:center;margin:6px 0}
 table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:10px 4px;text-align:left;border-bottom:1px solid rgba(174,230,255,.15)}th{color:var(--foam);font-weight:500}
 @media (prefers-reduced-motion:reduce){.wave,.scan,.spin{animation:none}}
+.ov{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;background:#021325;font-size:14px;color:var(--foam)}

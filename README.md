@@ -1,14 +1,12 @@
 # Absensi GPS & Selfie
 
-Struktur repo (package.json ada di ROOT repo):
-- app/, lib/, public/, package.json  -> frontend Next.js (Vercel)
-- apps-script/Code.gs                -> backend (paste ke Google Apps Script)
-
-## Vercel
-- Framework Preset: **Next.js** (vercel.json sudah mengaturnya)
-- Root Directory: kosongkan / `./` (package.json ada di root repo)
-- Output Directory: JANGAN diisi (biarkan default / matikan Override)
-- Environment Variable: NEXT_PUBLIC_API_URL = URL Web App Apps Script (.../exec)
+- app/, lib/, public/, package.json -> frontend Next.js (Vercel, package.json di ROOT repo)
+- apps-script/Code.gs -> backend Google Apps Script
 
 ## Apps Script
-Lihat komentar di bagian atas apps-script/Code.gs.
+1. Paste Code.gs, run setup() once.
+2. Deploy > Manage deployments > Edit > Version: **New version** > Deploy (wajib setiap kode berubah).
+3. Edit manual sheet Employees/Settings? Jalankan clearCache() (atau tunggu 5-10 menit).
+
+## Vercel
+Framework: Next.js, Output Directory kosong, env NEXT_PUBLIC_API_URL = URL /exec.
